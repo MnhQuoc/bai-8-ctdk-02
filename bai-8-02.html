@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra độ tuổi</title>
+</head>
+<h1 style="color:brown;">Kiểm tra tuổi</h1>
+<body>
+<br> Nhập độ tuổi để kiểm tra <input type="number" id="tuoi" placeholder="Nhập tuổi" > </br>
+<br>
+<button style="width:130px; height:30px" onclick="Check()"> Kiểm tra </button>
+<p id="kq"> Kết quả là: </p>
+
+</body>
+<script>
+    function Check() {
+        let tuoi = +document.getElementById("tuoi").value
+        if (tuoi > 0 && tuoi < 120){
+            document.getElementById("kq").innerHTML = tuoi +" là tuổi của một người" ;
+        }
+        else {
+            document.getElementById("kq").innerHTML = tuoi +" không phải là tuổi của một người" ;
+        }
+    }
+</script>
+</html>
